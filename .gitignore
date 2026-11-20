@@ -1,0 +1,57 @@
+# Secrets & local config
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Node (tooling)
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Editors / OS / assistants
+.claude/
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+*.log
+
+# Biometric datasets (FVC2000 / SOCOFing) - never commit fingerprint images
+data/
+*.tif
+*.bmp
+*.BMP
+
+# Runtime database & encryption key (created on first run)
+database/
+
+# Model / cache artefacts
+*.pt
+*.pth
+*.npz
+*.pkl
